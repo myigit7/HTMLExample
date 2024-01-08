@@ -9,17 +9,20 @@
 
 <body>
     <form method="post" action="/users/saveUser" target="_blank">
-        <!-- method -> What is the end points feature? The method give answer to this question. -->
-        <!-- action -> What is the path of the end point? The action give answer to this question. -->
+        <!-- method -> Which feature can I use to sent the information? The method give answer to this question. -->
+        <!-- action -> What is the end point of the end point? The action give answer to this question. -->
         <!-- target -> Target is provide that the form open another web page. -->
 
         <label>Name</label>
         <input type="text" name="Name" required placeholder="">
+        <!-- "required" says us that this empty box have to fill. -->
+        <!-- "placeholder" give information what the users should fill the empty area -->
         <br><br>
         <label>Surname</label>
         <input type="text" name="Surname">
         <br><br>
-        <input type="radio" name="Gender" id="m">
+        <input type="radio" name="Gender" id="m"> <!-- "id" and "for" provide the codes match. -->
+        <!-- In "radio" type should write same name with another input which use same target-->
         <label for="m">Men</label>
         <input type="radio" name="Gender" id="w">
         <label for="w">Women</label>
