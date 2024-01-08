@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sample</title>
+</head>
+
+<body>
+    <form method="post" action="/users/saveUser" target="_blank">
+        <!-- method -> What is the end points feature? The method give answer to this question. -->
+        <!-- action -> What is the path of the end point? The action give answer to this question. -->
+        <!-- target -> Target is provide that the form open another web page. -->
+
+        <label>Name</label>
+        <input type="text" name="Name" required placeholder="">
+        <br><br>
+        <label>Surname</label>
+        <input type="text" name="Surname">
+        <br><br>
+        <input type="radio" name="Gender" id="m">
+        <label for="m">Men</label>
+        <input type="radio" name="Gender" id="w">
+        <label for="w">Women</label>
+        <br><br>
+        <label>Country</label>
+        <select name="cities" multiple size="1">
+            <option value="" disabled></option>
+            <option value="1">USA</option>
+            <option value="2">UAE</option>
+            <option value="3">Türkiye</option>
+            <option value="4">Spain</option>
+            <option value="5">Italy</option>
+            <option value="6">France</option>
+            <option value="7">England(UK)</option>
+        </select>
+        <br><br>
+        <label>Email</label>
+        <input type="email" name="email">
+        <br><br>
+        <label>Web Site</label>
+        <input type="url" name="website">
+        <br><br>
+        <label>Phone</label>
+        <input type="tel" name="phone">
+        <br><br>
+        <label>Hobies</label>
+        <br>
+        <label>Football</label>
+        <input type="checkbox">
+        <br>
+        <label>Basketball</label>
+        <input type="checkbox">
+        <br>
+        <label>Voleyball</label>
+        <input type="checkbox">
+        <br><br>
+        <label>Profile Photo</label>
+        <input type="file">
+        <br><br>
+        <label>Birth Date</label>
+        <input type="date">
+        <br><br>
+        <label>Adress</label>
+        <textarea name="adress" id="adrs" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="button" value="Register">
+    </form>
+</body>
+
+</html>
